@@ -12,5 +12,6 @@ namespace database01.Model
         public ZooDbContext([NotNullAttribute] DbContextOptions options) : base(options)
         {
         }
+        public virtual DbSet<Animal> Animals { get; set; }
     }
 }
